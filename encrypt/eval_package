@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Javascript加密解密</title>
+    <meta name="keywords" content="Javascript加密解密" />
+    <meta name="description" content="JSON编辑器在线是一个在线查看JSON的工具。用于查看，编辑，和格式JSON。它显示你的数据并排在一个透明的，可编辑的控件和代码编辑器。"
+    />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Kevin">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <script src="//cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <link href="//cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="//cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/css/core.css">
+    <script src="/js/core.js"></script>
+    <script src="/Js/jstool.js"></script>
+    <script src="/Js/lib/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+</head>
+
+<body>
+    <div class="aw-container-wrap">
+        <div class="container">
+            <div class="row">
+                <div class="aw-content-wrap clearfix">
+                    <div class=" aw-main-content" style="min-height: 700px; max-height: 2000px">
+                        <div id="nav_menu">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <ul class="nav navbar-nav" style="width: 100%;">
+                                        <!--待开放功能-->
+                                        <li>
+                                            <a href="http://coder.toys">首页</a>
+                                        </li>
+                                        <li class="dropdown">
+                                            <li>
+                                                <a href="/cron/index.html">Cron生成器</a>
+                                            </li>
+                                            <li>
+                                                <a href="/jsonlint/index.html">JSON校验</a>
+                                            </li>
+                                            <li>
+                                                <a href="http://edit.coder.toys" title="JS压缩" target="_blank">JS压缩</a>
+                                            </li>
+                                            <!--暂开放功能 Start-->
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" id="jsontools" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                    aria-expanded="false">JSON相关
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="/">JSON在线编辑器</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/jsonview/index.html" target="_blank">JSON视图</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/JSONTOOL/jsonescape/index.html">JSON压缩转义</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/JSONTOOL/json2entity/index.html">JSON生成实体类</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/JSONTOOL/json2xml/index.html">XML-JSON互转</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/JSONTOOL/json2get/index.html" id="json2get">JSON和GET请求字符串互转</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/JSONTOOL/excel2json/index.html" id="excel2json">Excel转Json</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" id="encTools" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                    aria-expanded="false">编码/加密
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="/encrypt/base64">Base64编码、解码</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/md5">MD5加密</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/sha">SHA加密</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/escape">Escape编码</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/urlencode" id="urlEncode">URL编码</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/eval_package">Javascript Eval加密解密</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/encrypt/morse">摩斯密码加密解密</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" id="A1" data-toggle="dropdown" role="button" aria-haspopup="true"
+                                                    aria-expanded="false">VIP视频
+                                                    <span class="caret"></span>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <a href="/Video/default.html">通道一</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="/Video/index.html" target="_blank">通道二</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="http://old.coder.toys">返回旧版</a>
+                                            </li>
+                                            <!--End-->
+
+                                            <li class="dropdown">
+                                                <a href="/msg/msg.aspx" style="color: red;" target="_blank">留言</a>
+                                            </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                        <div style="clear: both"></div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <blockquote>
+                                    <p>Javascript加密解密</p>
+                                    <footer>Javascript加密解密eval(function(p,a,c,k,e,d)())</footer>
+                                </blockquote>
+                            </div>
+                            <div class="panel-body">
+                                <!--内容块开始-->
+                                <div>
+                                    <textarea id="code" name="RawJson" class="json_input" rows="16" style="width: 100%;" spellcheck="false"
+                                        placeholder="请输入Javascript"></textarea> </div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-primary" onclick="encode();">加密</button>
+                                    <button type="button" class="btn btn-primary" onclick="decode();">解密</button>
+                                    <button type="button" class="btn btn-primary" onclick="goFormat();">去格式化</button>
+                                    <button type="button" class="btn btn-danger" onclick="Empty();">清空结果</button>
+                                </div>
+                                <!--内容块结束-->
+                            </div>
+                            <input type="hidden" id="tabsize" value="1" />
+                            <div class="panel-footer"></div>
+                        </div>
+                        <div class="panel-footer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function goFormat() {
+            if (!window.localStorage) {
+                alert('你的浏览器太破了,所以无法启用保存到本地,到格式化页面自动加载的功能,你自己贴去把！');
+            } else {
+                localStorage.setItem("content2format", document.getElementById('code').value);
+            }
+
+            window.location.href = "http://edit.coder.toys";
+        }
+        a = 62;
+        function encode() {
+            var code = document.getElementById('code').value;
+            code = code.replace(/[\r\n]+/g, '');
+            code = code.replace(/'/g, "\\'");
+            var tmp = code.match(/\b(\w+)\b/g);
+            tmp.sort();
+            var dict = [];
+            var i, t = '';
+            for (var i = 0; i < tmp.length; i++) {
+                if (tmp[i] != t) dict.push(t = tmp[i]);
+            }
+            var len = dict.length;
+            var ch;
+            for (i = 0; i < len; i++) {
+                ch = num(i);
+                code = code.replace(new RegExp('\\b' + dict[i] + '\\b', 'g'), ch);
+                if (ch == dict[i]) dict[i] = '';
+            }
+            document.getElementById('code').value = "eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)d[e(c)]=k[c]||e(c);k=[function(e){return d[e]}];e=function(){return'\\\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\\\b'+e(c)+'\\\\b','g'),k[c]);return p}("
+                + "'" + code + "'," + a + "," + len + ",'" + dict.join('|') + "'.split('|'),0,{}))";
+        }
+        function num(c) {
+            return (c < a ? '' : num(parseInt(c / a))) + ((c = c % a) > 35 ? String.fromCharCode(c + 29) : c.toString(36));
+        }
+        function run() {
+            eval(document.getElementById('code').value);
+        }
+        function decode() {
+            var code = document.getElementById('code').value;
+            code = code.replace(/^eval/, '');
+            document.getElementById('code').value = eval(code);
+        }
+
+        function Empty() {
+            document.getElementById('code').value = '';
+            document.getElementById('code').select();
+        }
+
+        function GetFocus() {
+            document.getElementById('code').focus();
+        }
+    </script>
+</body>
+
+</html>
