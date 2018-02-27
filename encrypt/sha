@@ -21,7 +21,7 @@
     <script type="text/javascript" src="/encrypt/js/sha1.js"></script>
     <script type="text/javascript" src="/encrypt/js/sha256.js"></script>
     <script type="text/javascript" src="/encrypt/js/sha512.js"></script>
-</head>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> <script>   (adsbygoogle = window.adsbygoogle || []).push({     google_ad_client: "ca-pub-1403752424059895",     enable_page_level_ads: true   }); </script>    <script>         var _hmt = _hmt || [];         (function() {           var hm = document.createElement("script");           hm.src = "https://hm.baidu.com/hm.js?7f717ef802d7a14c5f82c2161570ec4d";           var s = document.getElementsByTagName("script")[0];            s.parentNode.insertBefore(hm, s);         })();         </script>  </head>
 
 <body>
     <div class="aw-container-wrap">
@@ -123,12 +123,12 @@
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="http://old.coder.toys">返回旧版</a>
+                                                
                                             </li>
                                             <!--End-->
 
                                             <li class="dropdown">
-                                                <a href="/msg/msg.aspx" style="color: red;" target="_blank">留言</a>
+                                                
                                             </li>
                                     </ul>
                                 </div>
